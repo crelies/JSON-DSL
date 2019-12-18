@@ -1,7 +1,11 @@
 public struct JSON {
     let nodes: [Node]
 
-    public init(_ nodes: Node...) {
+    public init(_ nodes: Node...) throws {
+        let rootNodesCount = nodes.filter { $0.isRootNode }.count
+        guard rootNodesCount <= 1 else {
+            throw JSONError.multipleRootNodes
+        }
         self.nodes = nodes
     }
 }
