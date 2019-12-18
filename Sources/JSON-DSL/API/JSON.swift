@@ -1,17 +1,13 @@
 public struct JSON {
-    let nodes: [Node]
+    let rootNode: Node
 
-    public init(_ nodes: Node...) throws {
-        let rootNodesCount = nodes.filter { $0.isRootNode }.count
-        guard rootNodesCount <= 1 else {
-            throw JSONError.multipleRootNodes
-        }
-        self.nodes = nodes
+    public init(_ rootNode: RootNode) {
+        self.rootNode = rootNode.node
     }
 }
 
 extension JSON: Renderable {
     public func render() -> String {
-        nodes.map { $0.render() }.joined(separator: ", ")
+        rootNode.render()
     }
 }
