@@ -3,6 +3,8 @@ public enum Node {
     case array([Node])
     // object
     case object(Object)
+    // json string
+    case json(String)
     // plain string
     case raw(String)
     // plain boolean

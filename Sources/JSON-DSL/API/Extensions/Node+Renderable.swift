@@ -6,6 +6,10 @@ extension Node: Renderable {
             return "[\(nodes)]"
         case .object(let object):
             return object.render()
+        case .json(let value):
+            return """
+                \(value)
+            """
         case .raw(let value):
             return #""\#(value)""#
         case .boolean(let value):
