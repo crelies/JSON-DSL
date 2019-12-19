@@ -102,6 +102,8 @@ let renderedString = json.render()
 ]
 ```
 
+**⚠️ Caution: *If you use `.json()` you could end up with invalid JSON. You need to know if a JSON encoded string is allowed in a specific hierarchy (example: properties are not allowed in an array)!***
+
 ### Advanced example 🔬
 
 When it comes to `Strings` it's getting complicated 💣
