@@ -3,7 +3,7 @@ public enum Node {
     case array([Node])
     // object
     case object(Object)
-    // json string
+    // parses given string and injects JSON elements
     case json(String)
     // plain string
     case raw(String)
