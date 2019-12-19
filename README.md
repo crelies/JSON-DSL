@@ -39,6 +39,37 @@ let renderedString = json.render()
 
 ```json
 [
+  [
+    "Developer",
+    {
+      "name": "crelies",
+      "language": "swift",
+      "iOS versions": [
+        8.0,
+        9.0,
+        10.0,
+        11.0,
+        12.0,
+        13.0
+      ],
+      "projects": {
+        "name": "AdvancedList",
+        "developers": [
+          {
+            "name": "crelies"
+          }
+        ]
+      }
+    },
+    "Age",
+    29,
+    "Swift",
+    5.1,
+    {
+      "isActive": true
+    },
+    null
+  ],
   "Developer",
   {
     "name": "crelies",
@@ -81,7 +112,7 @@ You can use
 
 - *raw strings* through `.raw("Test")` or `"Test"` (`"Test"` is shorthand syntax for `.raw("Test")`).
 
-**Hint:** *Keep in mind that you could get invalid JSON if you use an unescaped JSON string (see ❌ examples below).*
+**Hint: *Keep in mind that you could get invalid JSON if you use an unescaped JSON string (see ❌ examples below).***
 
 **Examples:**
 
