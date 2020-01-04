@@ -1,5 +1,10 @@
 # JSON-DSL
 
+[![Swift 5.1](https://img.shields.io/badge/swift5.1-compatible-green.svg?longCache=true&style=flat-square)](https://developer.apple.com/swift)
+[![Platform](https://img.shields.io/badge/platform-independent-lightgrey.svg?longCache=true&style=flat-square)](https://www.apple.com)
+[![Current Version](https://img.shields.io/github/v/tag/crelies/JSON-DSL?longCache=true&style=flat-square)](https://github.com/crelies/JSON-DSL)
+[![License](https://img.shields.io/badge/license-MIT-lightgrey.svg?longCache=true&style=flat-square)](https://en.wikipedia.org/wiki/MIT_License)
+
 A simple domain-specific-language (**DSL**) for writing *type-safe* **JSON** in **Swift**
 
 ## Motivation 🚀
